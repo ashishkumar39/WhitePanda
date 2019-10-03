@@ -14,6 +14,7 @@ body {
 
 .underline {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .primary-color {
@@ -28,7 +29,7 @@ body {
 
 .sidebar {
   border-right: 1px solid rgb(190, 190, 190);
-  width: 8%;
+  /* width: 8%; */
 }
 
 .dashboard-icon {
@@ -80,6 +81,7 @@ body {
 
 .logo {
   margin-left: 5%;
+  cursor: pointer;
 }
 
 .logo img {
@@ -98,6 +100,7 @@ body {
   font-size: 26px;
   font-weight: 100;
   color: rgb(109, 109, 109);
+  cursor: pointer;
 }
 
 .notification .notification-number {
@@ -119,6 +122,7 @@ body {
   color: white;
   background: #b3e77f;
   padding: 10px;
+  cursor: pointer;
 }
 
 .content-store {
@@ -159,26 +163,65 @@ body {
 .order-button {
   flex: 0;
   color: #3ebcb3;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   border: 1px solid #3ebcb3;
   border-radius: 2px;
-  padding: 5px 30px 5px 30px;
+  padding: 10px 20px 10px 20px;
   background: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background: #3ebcb3;
+  color: white;
+  transition: 0.2s;
 }
 
 .order-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: 5%;
+  color: rgb(148, 148, 148);
 }
 
 .order {
   flex: 1 1 27%;
   /* border: 1px solid black; */
   margin: 10px;
-  padding: 50px 40px;
+  padding: 40px 30px;
   /* flex-grow: 0; */
+}
+
+.order-head {
+  display: flex;
+  align-items: center;
+}
+
+.order-image {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #3ebcb3;
+}
+
+.order-name {
+  margin: 25px;
+  color: rgb(77, 77, 77);
+}
+
+.name {
+  font-weight: bold;
+}
+
+.active {
+  color: #3ebcb3;
+}
+
+.order-body {
+  line-height: 1.6;
+  font-size: 14px;
 }
 
 .footer {
