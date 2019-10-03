@@ -5,6 +5,15 @@ body {
 
 * {
   font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .primary-color {
@@ -22,17 +31,25 @@ body {
   width: 8%;
 }
 
+.dashboard-icon {
+  border-right: 2px solid #3ebcb3;
+  display: flex;
+  justify-content: center;
+}
+
 .dashboard-icon .outer-box {
   display: flex;
   flex-wrap: wrap;
   /* border: 1px solid black; */
   width: 42px;
   height: 42px;
-  margin: 10px;
+  /* margin: 10px; */
   /* background: red; */
 }
 
 .dashboard-icon .inner-box {
+  /* display: flex; */
+  flex: 1 0 22%;
   border: 2px solid #3ebcb3;
   border-radius: 2px;
   width: 15px;
@@ -50,16 +67,117 @@ body {
 .topbar {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid gray;
+  align-items: center;
+  box-shadow: 0px 2px 2px #dadada;
+  height: 10vh;
 }
 
 .top-icons {
   display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+}
+
+.logo {
+  margin-left: 5%;
+}
+
+.logo img {
+  height: 60%;
+  width: 60%;
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  font-size: 26px;
+  font-weight: 100;
+  color: rgb(109, 109, 109);
+}
+
+.notification .notification-number {
+  position: absolute;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 2px;
+  top: 15px;
+  margin-left: 15px;
+  background: #f25c69;
+  color: white;
+  line-height: 20px;
 }
 
 .profile {
   border-radius: 50%;
+  display: flex;
+  align-items: center;
   color: white;
   background: #b3e77f;
-  padding: 12px;
+  padding: 10px;
+}
+
+.content-store {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.heading {
+  font-size: 36px;
+  color: rgb(29, 29, 29);
+}
+
+.store-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* width: 100 %; */
+  background: #f9fbfb;
+  border: 1px solid black;
+}
+
+.info-head {
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+.info-body {
+  font-size: 14px;
+  color: rgb(148, 148, 148);
+  line-height: 1.6;
+  margin-bottom: 2%;
+}
+
+.order-button {
+  flex: 0;
+  color: #3ebcb3;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #3ebcb3;
+  border-radius: 2px;
+  padding: 5px 30px 5px 30px;
+  width: 100%;
+  flex-grow: 0;
+}
+
+.order-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+
+.order {
+  flex: 1 1 27%;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 50px 40px;
+  flex-grow: 0;
 }
