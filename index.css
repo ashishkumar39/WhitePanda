@@ -18,12 +18,33 @@ body {
 }
 
 .sidebar {
-  border-right: 1px solid gray;
+  border-right: 1px solid rgb(190, 190, 190);
+  width: 8%;
+}
+
+.dashboard-icon .outer-box {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  width: 42px;
+  height: 42px;
+  margin: 10px;
+  /* background: red; */
+}
+
+.dashboard-icon .inner-box {
+  border: 2px solid #3ebcb3;
+  border-radius: 2px;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  background: #fdfdfd;
 }
 
 .topbar {
