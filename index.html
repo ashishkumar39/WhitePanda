@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <title>White Panda</title>
   </head>
   <body>
@@ -18,8 +22,8 @@
             <div class="inner-box"></div>
           </div>
         </div>
-        <div><i class="fas fa-search"></i></div>
-        <div>icon 3</div>
+        <div class="search-icon"><i class="fas fa-search"></i></div>
+        <div class="ham-icon"><i class="fas fa-hamburger"></i></div>
       </div>
       <div class="container">
         <div class="topbar">
@@ -38,22 +42,24 @@
         <div class="content-store">
           <div class="heading">Content Store</div>
           <div class="store-info">
-            <div class="info-head primary-color">
-              Got bulk orders or almost similar orders ? Fill the order brief in
-              an excel sheet
-            </div>
-            <div class="info-body">
-              If you're wondering about an easy way to place orders in large
-              numbers, we provide a way customized just for that. Download our
-              excel sheet, and fill the order brief in the prescribed format and
-              submit. In case you need any help,
-              <span class="underline"
-                >we are just a click away to assist you in placeing your
-                order</span
-              >
-            </div>
-            <div class="order-button">
-              Order via Excel Sheet
+            <div class="inner-store">
+              <div class="info-head primary-color">
+                Got bulk orders or almost similar orders ? Fill the order brief
+                in an excel sheet
+              </div>
+              <div class="info-body">
+                If you're wondering about an easy way to place orders in large
+                numbers, we provide a way customized just for that. Download our
+                excel sheet, and fill the order brief in the prescribed format
+                and submit. In case you need any help,
+                <span class="underline"
+                  >we are just a click away to assist you in placeing your
+                  order</span
+                >
+              </div>
+              <div class="order-button">
+                Order via Excel Sheet
+              </div>
             </div>
           </div>
           <div class="order-list">
@@ -63,15 +69,33 @@
                   <img src="" alt="" />
                 </div>
                 <div class="order-name">
-                  <span class="name">Blog / Article</span> <br />
-                  from ₹500
+                  <div class="name">Blog / Article</div>
+                  <div class="subname">from ₹500</div>
                 </div>
               </div>
               <div class="order-body">
                 Typically 450-400 words, an e-book is perfect for your target
                 audience ranging from prospective customers to users
               </div>
-              <div class="order-button">Order</div>
+              <div class="order-button btn">Order</div>
+            </div>
+            <div class="order active-card">
+              <div class="order-head">
+                <div class="order-image">
+                  <img src="" alt="" />
+                </div>
+                <div class="order-name">
+                  <div class="name active">
+                    Newsletter / E-mailer
+                  </div>
+                  <div class="subname">from ₹1000</div>
+                </div>
+              </div>
+              <div class="order-body">
+                Typically 450-400 words, an e-book is perfect for your target
+                audience ranging from prospective customers to users
+              </div>
+              <div class="order-button btn">Order</div>
             </div>
             <div class="order">
               <div class="order-head">
@@ -79,15 +103,15 @@
                   <img src="" alt="" />
                 </div>
                 <div class="order-name">
-                  <span class="name active">Newsletter / E-mailer</span> <br />
-                  from ₹500
+                  <div class="name">Whitepaper</div>
+                  <div class="subname">from ₹2000</div>
                 </div>
               </div>
               <div class="order-body">
                 Typically 450-400 words, an e-book is perfect for your target
                 audience ranging from prospective customers to users
               </div>
-              <div class="order-button">Order</div>
+              <div class="order-button btn">Order</div>
             </div>
             <div class="order">
               <div class="order-head">
@@ -95,15 +119,15 @@
                   <img src="" alt="" />
                 </div>
                 <div class="order-name">
-                  <span class="name">Blog / Article</span> <br />
-                  from ₹500
+                  <div class="name">e-book</div>
+                  <div class="subname">from ₹1000</div>
                 </div>
               </div>
               <div class="order-body">
                 Typically 450-400 words, an e-book is perfect for your target
                 audience ranging from prospective customers to users
               </div>
-              <div class="order-button">Order</div>
+              <div class="order-button btn">Order</div>
             </div>
             <div class="order">
               <div class="order-head">
@@ -111,15 +135,15 @@
                   <img src="" alt="" />
                 </div>
                 <div class="order-name">
-                  <span class="name">Blog / Article</span> <br />
-                  from ₹500
+                  <div class="name">Report / Guide</div>
+                  <div class="subname">from ₹1000</div>
                 </div>
               </div>
               <div class="order-body">
                 Typically 450-400 words, an e-book is perfect for your target
                 audience ranging from prospective customers to users
               </div>
-              <div class="order-button">Order</div>
+              <div class="order-button btn">Order</div>
             </div>
             <div class="order">
               <div class="order-head">
@@ -127,15 +151,15 @@
                   <img src="" alt="" />
                 </div>
                 <div class="order-name">
-                  <span class="name">Blog / Article</span> <br />
-                  from ₹500
+                  <div class="name">Product Description</div>
+                  <div class="subname">from ₹500</div>
                 </div>
               </div>
               <div class="order-body">
                 Typically 450-400 words, an e-book is perfect for your target
                 audience ranging from prospective customers to users
               </div>
-              <div class="order-button">Order</div>
+              <div class="order-button btn">Order</div>
             </div>
             <div class="order">
               <div class="order-head">
@@ -143,15 +167,15 @@
                   <img src="" alt="" />
                 </div>
                 <div class="order-name">
-                  <span class="name">Blog / Article</span> <br />
-                  from ₹500
+                  <div class="name">Website Content</div>
+                  <div class="subname">from ₹1000</div>
                 </div>
               </div>
               <div class="order-body">
                 Typically 450-400 words, an e-book is perfect for your target
                 audience ranging from prospective customers to users
               </div>
-              <div class="order-button">Order</div>
+              <div class="order-button btn">Order</div>
             </div>
             <div class="order">
               <div class="order-head">
@@ -159,15 +183,15 @@
                   <img src="" alt="" />
                 </div>
                 <div class="order-name">
-                  <span class="name">Blog / Article</span> <br />
-                  from ₹500
+                  <div class="name">Video Script</div>
+                  <div class="subname">from ₹1000</div>
                 </div>
               </div>
               <div class="order-body">
                 Typically 450-400 words, an e-book is perfect for your target
                 audience ranging from prospective customers to users
               </div>
-              <div class="order-button">Order</div>
+              <div class="order-button btn">Order</div>
             </div>
             <div class="order">
               <div class="order-head">
@@ -175,15 +199,15 @@
                   <img src="" alt="" />
                 </div>
                 <div class="order-name">
-                  <span class="name">Blog / Article</span> <br />
-                  from ₹500
+                  <div class="name">Company / Brochure</div>
+                  <div class="subname">from ₹2000</div>
                 </div>
               </div>
               <div class="order-body">
                 Typically 450-400 words, an e-book is perfect for your target
                 audience ranging from prospective customers to users
               </div>
-              <div class="order-button">Order</div>
+              <div class="order-button btn">Order</div>
             </div>
             <div class="order">
               <div class="order-head">
@@ -191,15 +215,15 @@
                   <img src="" alt="" />
                 </div>
                 <div class="order-name">
-                  <span class="name">Blog / Article</span> <br />
-                  from ₹500
+                  <div class="name">Press Release</div>
+                  <div class="subname">from ₹2000</div>
                 </div>
               </div>
               <div class="order-body">
                 Typically 450-400 words, an e-book is perfect for your target
                 audience ranging from prospective customers to users
               </div>
-              <div class="order-button">Order</div>
+              <div class="order-button btn">Order</div>
             </div>
           </div>
         </div>

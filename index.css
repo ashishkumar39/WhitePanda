@@ -4,8 +4,9 @@ body {
 }
 
 * {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 
 .bold {
@@ -28,34 +29,53 @@ body {
 }
 
 .sidebar {
-  border-right: 1px solid rgb(190, 190, 190);
+  border-right: 1px solid rgb(238, 238, 238);
   /* width: 8%; */
+  width: 70px;
 }
 
 .dashboard-icon {
-  border-right: 2px solid #3ebcb3;
+  border-right: 3px solid #3ebcb3;
   display: flex;
   justify-content: center;
+  /* top: 15vh; */
+  padding: 15px 0;
+  margin-top: 100px;
 }
 
 .dashboard-icon .outer-box {
   display: flex;
   flex-wrap: wrap;
   /* border: 1px solid black; */
-  width: 42px;
-  height: 42px;
-  /* margin: 10px; */
-  /* background: red; */
+  width: 26px;
+  height: 26px;
 }
 
 .dashboard-icon .inner-box {
   /* display: flex; */
-  flex: 1 0 22%;
   border: 2px solid #3ebcb3;
-  border-radius: 2px;
-  width: 15px;
-  height: 15px;
-  margin: 1px;
+  width: 9px;
+  height: 9px;
+  margin: 2px;
+}
+
+.search-icon {
+  color: rgb(121, 121, 121);
+  font-size: 24px;
+  padding: 15px 0;
+  margin: 5px 0;
+  text-align: center;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+
+.ham-icon {
+  color: rgb(121, 121, 121);
+  font-size: 24px;
+  padding: 15px 0;
+  margin: 5px 0;
+  text-align: center;
+  cursor: pointer;
 }
 
 .container {
@@ -80,7 +100,7 @@ body {
 }
 
 .logo {
-  margin-left: 5%;
+  margin: 0 100px;
   cursor: pointer;
 }
 
@@ -126,7 +146,8 @@ body {
 }
 
 .content-store {
-  margin: 5%;
+  /* margin: 5%; */
+  margin: 70px 100px;
   display: flex;
   flex-direction: column;
   /* border: 1px solid black; */
@@ -140,37 +161,44 @@ body {
 .store-info {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 60px 30px;
   /* width: 100 %; */
   background: #f9fbfb;
   /* border: 1px solid black; */
 }
 
+.inner-store {
+  width: 70%;
+}
+
 .info-head {
-  font-weight: 500;
-  /* margin-bottom: 2%; */
+  font-size: 18px;
+  margin: 12px 0;
 }
 
 .info-body {
   font-size: 14px;
   color: rgb(148, 148, 148);
   line-height: 1.6;
-  margin-bottom: 2%;
 }
 
 .order-button {
   flex: 0;
   color: #3ebcb3;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   border: 1px solid #3ebcb3;
-  border-radius: 2px;
-  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 30px 0px 10px;
   background: white;
-  margin-top: 20px;
   cursor: pointer;
+  width: 180px;
+  text-align: center;
+}
+
+.btn {
+  width: 50%;
 }
 
 .order-button:hover {
@@ -181,17 +209,19 @@ body {
 
 .order-list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 5%;
   color: rgb(148, 148, 148);
 }
 
 .order {
-  flex: 1 1 27%;
+  /* flex: 1 1 27%; */
   /* border: 1px solid black; */
   margin: 10px;
   padding: 40px 30px;
+  width: 30%;
   /* flex-grow: 0; */
+  background: white;
 }
 
 .order-head {
@@ -207,21 +237,33 @@ body {
 }
 
 .order-name {
-  margin: 25px;
+  margin: 0 20px;
   color: rgb(77, 77, 77);
+  line-height: 1.6;
 }
 
 .name {
   font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.subname {
+  color: rgb(102, 102, 102);
 }
 
 .active {
   color: #3ebcb3;
 }
 
+.active-card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
 .order-body {
   line-height: 1.6;
   font-size: 14px;
+  margin: 20px 0px;
 }
 
 .footer {
@@ -237,6 +279,7 @@ body {
 .social {
   font-size: 32px;
   margin: 20px 30px;
+  cursor: pointer;
 }
 
 .social-list {
