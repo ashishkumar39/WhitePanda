@@ -232,6 +232,16 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
+.order:hover .name {
+  color: #3ebcb3;
+  transition: 0.2s;
+}
+
+.order:hover img {
+  display: none;
+  transition: 0.2s;
+}
+
 .order-head {
   display: flex;
   align-items: center;
@@ -242,6 +252,7 @@ body {
   width: 60px;
   height: 60px;
   background: #3ebcb3;
+  transition: 0.3s;
 }
 
 .order-image img {
