@@ -344,7 +344,7 @@ body {
   }
 
   .content-store {
-    margin: 30px 20px;
+    margin: 20px 10px;
     text-align: center;
   }
 
@@ -367,7 +367,7 @@ body {
 
 /* Mobile phones */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .logo img {
     height: 25px;
     width: 100px;
