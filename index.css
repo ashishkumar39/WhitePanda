@@ -41,6 +41,10 @@ body {
   margin-top: 100px;
 }
 
+/* .dashboard-icon:hover {
+  border-right: 3px solid #3ebcb3;
+} */
+
 .dashboard-icon .outer-box {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +70,10 @@ body {
   cursor: pointer;
 }
 
+/* .search-icon:hover {
+  border-right: 3px solid #3ebcb3;
+} */
+
 .ham-icon {
   color: rgb(121, 121, 121);
   font-size: 24px;
@@ -75,6 +83,10 @@ body {
   -webkit-text-stroke: 1px white;
   cursor: pointer;
 }
+
+/* .ham-icon:hover {
+  border-right: 3px solid #3ebcb3;
+} */
 
 .container {
   display: flex;
@@ -214,6 +226,10 @@ body {
   padding: 40px 30px;
   width: 30%;
   background: white;
+}
+
+.order:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .order-head {
